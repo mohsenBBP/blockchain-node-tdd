@@ -54,10 +54,10 @@ describe("TransactionPool", () => {
       }
     });
     it("returns valid transaction", () => {
-      expect(transactionPool.validTransaction()).toEqual(validTransactions);
+      expect(transactionPool.validTransactions()).toEqual(validTransactions);
     });
     it("ligs errors for the invalid transactions", () => {
-      transactionPool.validTransaction();
+      transactionPool.validTransactions();
       expect(errorMock).toHaveBeenCalled();
     });
   });
